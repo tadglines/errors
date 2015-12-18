@@ -1,10 +1,10 @@
 
 # errors
-    import "github.com/juju/errors"
+    import "github.com/tadglines/errors"
 
-[![GoDoc](https://godoc.org/github.com/juju/errors?status.svg)](https://godoc.org/github.com/juju/errors)
+[![GoDoc](https://godoc.org/github.com/tadglines/errors?status.svg)](https://godoc.org/github.com/tadglines/errors)
 
-The juju/errors provides an easy way to annotate errors without losing the
+The tadglines/errors provides an easy way to annotate errors without losing the
 orginal error context.
 
 The exported `New` and `Errorf` functions are designed to replace the

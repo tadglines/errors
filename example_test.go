@@ -6,7 +6,7 @@ package errors_test
 import (
 	"fmt"
 
-	"github.com/juju/errors"
+	"github.com/tadglines/errors"
 )
 
 func ExampleTrace() {

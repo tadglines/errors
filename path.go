@@ -19,9 +19,9 @@ func init() {
 	_, file, _, ok := runtime.Caller(0)
 	if ok {
 		// We know that the end of the file should be:
-		// github.com/juju/errors/path.go
+		// github.com/tadglines/errors/path.go
 		size := len(file)
-		suffix := len("github.com/juju/errors/path.go")
+		suffix := len("github.com/tadglines/errors/path.go")
 		goPath = file[:size-suffix]
 		prefixSize = len(goPath)
 	}

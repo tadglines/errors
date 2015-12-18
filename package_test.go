@@ -11,7 +11,7 @@ import (
 
 	gc "gopkg.in/check.v1"
 
-	"github.com/juju/errors"
+	"github.com/tadglines/errors"
 )
 
 func Test(t *testing.T) {
@@ -76,7 +76,7 @@ func setLocationsForErrorTags(filename string) {
 	if err != nil {
 		panic(err)
 	}
-	filename = "github.com/juju/errors/" + filename
+	filename = "github.com/tadglines/errors/" + filename
 	lines := strings.Split(string(data), "\n")
 	for i, line := range lines {
 		if j := strings.Index(line, "//err "); j >= 0 {
