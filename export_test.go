@@ -10,3 +10,5 @@ func GoPath() string {
 }
 
 var TrimGoPath = trimGoPath
+
+var DetermineGoPath = determineGoPath

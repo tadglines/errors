@@ -27,3 +27,9 @@ func (*pathSuite) TestTrimGoPath(c *gc.C) {
 	absoluteImport := "/usr/share/foo/bar/baz.go"
 	c.Assert(errors.TrimGoPath(absoluteImport), gc.Equals, absoluteImport)
 }
+
+func (*pathSuite) TestDetermineGoPath(c *gc.C) {
+	c.Assert(errors.DetermineGoPath("/home/user/stuff/vendor/src/foo/bar.go", "foo/bar.go"), gc.Equals, "/home/user/stuff/")
+	c.Assert(errors.DetermineGoPath("/home/user/stuff/src/foo/bar.go", "foo/bar.go"), gc.Equals, "/home/user/stuff/")
+	c.Assert(errors.DetermineGoPath("/home/user/stuff/foo/bar.go", "foo/bar.go"), gc.Equals, "/home/user/stuff/")
+}
